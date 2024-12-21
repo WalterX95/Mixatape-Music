@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
   <title>Media Audio Materialize CSS</title>
 </head>
 
@@ -35,9 +35,23 @@
     </nav>
   </header>
   <main>
-       <br>
-       <br>
-       <div id="mediaPlayer"></div>
+      <h4 class="text-accent-2">MY PLAYLIST</h4>
+       <div class="container left-align">
+        <div class="row">
+          <div class="col s5 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="assets/img/disc.png" class="img-cards">
+                <span class="card-title text-dark">Card Title</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">play_arrow</i></a>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="assets/js/script.js"></script>

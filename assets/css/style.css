@@ -1,6 +1,21 @@
-#mediaPlayer {
-    max-width: 50%;
-    border: 1px solid black;
-    margin: 0 auto;
-    height: 40vh;
+:root {
+    --color-black: #000000;
+}
+
+.img-cards {
+    width: 25% !important;
+}
+
+/*MODIFICHE CARDS DI MATERIALIZE CSS */
+.card .card-image .card-title {
+    color: var(--color-black);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 24px;
+}
+
+.text-dark {
+  color: var(--color-black) !important;
 }
