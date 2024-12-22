@@ -1,60 +1,88 @@
-<!DOCTYPE html>
-<html lang="it">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
-  <title>Media Audio Materialize CSS</title>
-</head>
-
-<body>
-  <header>
-    <!-- Dropdown Structure YEEES / NOTT -->
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">three</a></li>
-    </ul>
-    <nav>
-      <div class="nav-wrapper blue-grey darken-4">
-        <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html"></a></li>
-          <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-          <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-          <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-          <!-- Dropdown Trigger -->
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">queue_music</i><i
-                class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-      <h4 class="text-accent-2">MY PLAYLIST</h4>
-       <div class="container left-align">
-        <div class="row">
-          <div class="col s5 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="assets/img/disc.png" class="img-cards">
-                <span class="card-title text-dark">Card Title</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">play_arrow</i></a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" 
+                integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+                crossorigin="anonymous">
+          <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  </head>
+  <body>
+     <header>
+             <nav class="navbar navbar-expand-lg bg-dark">
+              <div class="container-fluid">
+                  <a class="navbar-brand text-white" href="#">NavBar</a>
+                  <!--BUTTON TYPE-->
+                  <button class="navbar-toggler bg-light" 
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNav"
+                          aria-controls="navbarNav"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-white"></span>
+                  </button>
+                  <div class="collapse navbar-collapse text-white" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                             <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <div class="dropdown">
+                            <button class="btn bg-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Cerca
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" type="button">Per Titolo</button></li>
+                              <li><button class="dropdown-item" type="button">Per Artista</button></li>
+                              <li><button class="dropdown-item" type="button">Per Album</button></li>
+                              <li><button class="dropdown-item" type="button">Per Anno</button></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="nav-item" >
+                             <a class="nav-link text-white" href="#">Playlist</a>
+                        </li>
+                        <li class="nav-item">
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              My Account
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" type="button">Impostazioni</button></li>
+                              <li><button class="dropdown-item" type="button">My Playlist</button></li>
+                              <li><button class="dropdown-item" type="button">Preferiti</button></li>
+                            </ul>
+                          </div>
+                        </li>
+                     </ul>
+                  </div>
               </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-  </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</body>
-
+             </nav>
+     </header>
+     <main>  
+         <div class="container">
+             <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-2">
+                     <div class="card" style="width: 18rem;">
+                        <img src="https://placehold.co/600x400/png" class="card-img-top" alt="placeholder album">
+                          <div class="card-title">
+                            <p class="h4 position-absolute top-100 start-50 translate-middle">Home Playlist</p>
+                             <button class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i class="bi bi-play-fill"></i></button>
+                          </div>
+                     </div>
+                </div>
+             </div>
+         </div>
+     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous"></script>
+  </body>
 </html>

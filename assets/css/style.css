@@ -2,20 +2,14 @@
     --color-black: #000000;
 }
 
-.img-cards {
-    width: 25% !important;
-}
-
-/*MODIFICHE CARDS DI MATERIALIZE CSS */
-.card .card-image .card-title {
-    color: var(--color-black);
-    position: relative;
-    bottom: 0;
-    left: 0;
-    max-width: 100%;
-    padding: 24px;
-}
-
 .text-dark {
   color: var(--color-black) !important;
+}
+
+.start-100 {
+    left: 92% !important;
+}
+
+.top-100 {
+    top: 82% !important;
 }
