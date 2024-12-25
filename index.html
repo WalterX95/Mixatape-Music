@@ -34,10 +34,15 @@
                   Cerca
                 </button>
                 <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button">Per Titolo</button></li>
-                  <li><button class="dropdown-item" type="button">Per Artista</button></li>
-                  <li><button class="dropdown-item" type="button">Per Album</button></li>
-                  <li><button class="dropdown-item" type="button">Per Anno</button></li>
+                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#findTitle">
+                      Per Titolo
+                    </button></li>
+                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#findArtist">
+                      Per Artista
+                    </button></li>
+                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#findAlbum">Per
+                      Album</button></li>
+                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#findYear">Per Anno</button></li>
                 </ul>
               </div>
             </li>
@@ -66,60 +71,144 @@
     </nav>
   </header>
   <main>
+    <!-- Modal findTitle -->
+    <div class="modal fade" id="findTitle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="findTitleLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="findTitleLabel">Cerca Per Titolo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal findArtist -->
+    <div class="modal fade" id="findArtist" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="findArtistLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="findArtistLabel">Cerca Per Artista</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- Modal findAlbum -->
+       <div class="modal fade" id="findAlbum" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="findAlbumLabel" aria-hidden="true">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h1 class="modal-title fs-5" id="findAlbumLabel">Cerca Per Album</h1>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+             </form>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+           </div>
+         </div>
+       </div>
+     </div>
+      <!-- Modal findYear -->
+    <div class="modal fade" id="findYear" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="findYearLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="findYearLabel">Cerca Per Anno</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="container">
       <div class="row my-4 mx-5 py-4">
         <div class="col-lg-3 col-xl-3 my-3 mx-3 py-4 col-md-6 col-sm-2">
           <div class="card">
             <img src="https://placehold.co/600x400/png" class="card-img-top" alt="placeholder album">
-              <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Home Playlist</p>
-              <button
-                class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
-                  class="bi bi-play-fill"></i></button>
+            <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Home Playlist</p>
+            <button
+              class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
+                class="bi bi-play-fill"></i></button>
           </div>
         </div>
         <div class="col-lg-3 col-xl-3 my-3 mx-3 py-4 col-md-6 col-sm-2">
           <div class="card">
             <img src="https://placehold.co/600x400/png" class="card-img-top" alt="placeholder album">
-              <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Second Play</p>
-              <button
-                class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
-                  class="bi bi-play-fill"></i></button>
+            <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Second Play</p>
+            <button
+              class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
+                class="bi bi-play-fill"></i></button>
           </div>
         </div>
         <div class="col-lg-3 col-xl-3 my-3 mx-3 py-4 col-md-6 col-sm-2">
           <div class="card">
             <img src="https://placehold.co/600x400/png" class="card-img-top" alt="placeholder album">
-              <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Terzo Play</p>
-              <button
-                class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
-                  class="bi bi-play-fill"></i></button>
+            <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Terzo Play</p>
+            <button
+              class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
+                class="bi bi-play-fill"></i></button>
           </div>
         </div>
         <div class="col-lg-3 col-xl-3 my-3 mx-3 py-4 col-md-6 col-sm-2">
           <div class="card">
             <img src="https://placehold.co/600x400/png" class="card-img-top" alt="placeholder album">
-              <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Quarto Play</p>
-              <button
-                class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
-                  class="bi bi-play-fill"></i></button>
+            <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Quarto Play</p>
+            <button
+              class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
+                class="bi bi-play-fill"></i></button>
           </div>
         </div>
         <div class="col-lg-3 col-xl-3 my-3 mx-3 py-4 col-md-6 col-sm-2">
           <div class="card">
             <img src="https://placehold.co/600x400/png" class="card-img-top" alt="placeholder album">
-              <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Quinto Play</p>
-              <button
-                class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
-                  class="bi bi-play-fill"></i></button>
+            <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Quinto Play</p>
+            <button
+              class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
+                class="bi bi-play-fill"></i></button>
           </div>
         </div>
         <div class="col-lg-3 col-xl-3 my-3 mx-3 py-4 col-md-6 col-sm-2">
           <div class="card">
             <img src="https://placehold.co/600x400/png" class="card-img-top" alt="placeholder album">
-              <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Six Play</p>
-              <button
-                class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
-                  class="bi bi-play-fill"></i></button>
+            <p class="h5 position-absolute top-100 start-50 translate-middle changeColor">Six Play</p>
+            <button
+              class="btn btn-primary position-absolute top-100 start-100 translate-middle text-bg-success rounded-4"><i
+                class="bi bi-play-fill"></i></button>
           </div>
         </div>
       </div>
