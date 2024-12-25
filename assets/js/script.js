@@ -2,7 +2,6 @@
 
 let dataTheme;
 let themeStateMem = localStorage.getItem("DarkTheme");
-console.log(themeStateMem)
 const btnDarkLight = document.getElementById("dark-theme");
 const titlesCard = document.querySelectorAll(".changeColor");
 const bodyPage = document.getElementsByTagName("body")[0];
@@ -52,7 +51,8 @@ function changeTheme() {
   
 }
 
-btnDarkLight.addEventListener("click", () => {
+btnDarkLight.addEventListener("click", (e) => {
+  e.preventDefault();
    dataTheme = !dataTheme;
    changeTheme();
 });
