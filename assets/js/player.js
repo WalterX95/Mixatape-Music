@@ -1,7 +1,7 @@
 //CONST BUTTON ASSINGMENT
 const playSongBtn = document.getElementById("playSongBtn");
 const trackingAudio = document.getElementById("trackingAudio");
-let audioTrackTime;
+
 
 const objAudio = {
     src:'./assets/music/song.mp3',
