@@ -2,6 +2,8 @@
 const playSongBtn = document.getElementById("playSongBtn");
 const trackingAudio = document.getElementById("trackingAudio");
 
+//Audio Progree in Tooltip
+const volumBtn = document.getElementById('volumBtn');
 
 const objAudio = {
     src:'./assets/music/song.mp3',
@@ -14,9 +16,7 @@ const audio = new Audio(objAudio.src);
 let audioState = false;
 
 const audioTrackingData = () => {
-    let trackValue = audio.currentTime / audio.duration * 100;
-    trackingAudio.value = trackValue;
-    console.log(trackingAudio.value);
+    trackingAudio.value = audio.currentTime / audio.duration * 100;
 };
 
 const PlayStatePauseIcon = () => {
