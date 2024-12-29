@@ -256,8 +256,10 @@
        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
      </div>
      <div class="modal-body">
-         <input type="range" id="volumBtn" name="volume" min="0" max="11" />
-         <button class="btn btn-outline-success"><i class="bi bi-volume-mute"></i></button>
+         <input type="range" id="volumBtn" min="1" max="100" 
+         value="100" />
+         <button class="btn btn-outline-success" id="mutedPlayer"><i class="bi bi-volume-mute"></i></button>
+         <button class="btn btn-outline-success"><i class="bi bi-shuffle"></i></button>
      </div>
      <div class="modal-footer">
        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
