@@ -21,7 +21,10 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('YTPlayer', {
         height: '60',
         width: '60',
-        videoId: 'M7lc1UVf-VE',
+        videoId: 'M7lc1UVf-VE', // Solo l'ID del video
+       /* playerVars: {
+            'listType': 'WindMusic', // Tipo di lista
+        },*/
         events: {
             'onStateChange': onPlayerStateChange,
             'onPlayerStateChange': onPlayerStateChange
